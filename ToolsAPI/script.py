@@ -68,7 +68,7 @@ functions = [
 ]
 
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4o-mini-2024-07-18",
     messages=messages,
     tools=functions
 )
@@ -100,7 +100,7 @@ if assistant_message.tool_calls:
                 })
 
 second_response = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4o-mini-2024-07-18",
     messages=messages
 )
 
